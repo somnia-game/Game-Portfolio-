@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Chaean Kim | Game Development Portfolio</title>
+<style>
+:root{color-scheme:dark;--bg:#111522;--panel:#1d2435;--accent:#a9b8ff;--text:#f3f5ff;--muted:#bac2d7}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font:16px/1.65 system-ui,-apple-system,Segoe UI,sans-serif;background:var(--bg);color:var(--text)}header{position:sticky;top:0;background:#111522ef;border-bottom:1px solid #ffffff24;z-index:2}nav{max-width:1050px;margin:auto;padding:12px 20px;display:flex;gap:18px;flex-wrap:wrap;align-items:center}nav a{color:var(--text);text-decoration:none;font-size:.93rem}nav a:hover,nav a:focus{color:var(--accent);text-decoration:underline}.brand{font-weight:750;margin-right:auto}main{max-width:1050px;margin:auto;padding:0 20px}section{padding:70px 0;scroll-margin-top:65px;border-bottom:1px solid #ffffff1c}h1{font-size:clamp(2rem,5vw,3.8rem);line-height:1.1;margin:15px 0}h2{font-size:1.9rem;margin-top:0}p{max-width:750px}.eyebrow{color:var(--accent);font-weight:700;letter-spacing:.12em;text-transform:uppercase}.muted{color:var(--muted)}.pill{display:inline-block;padding:7px 12px;background:#2e3856;border-radius:999px;margin:5px 6px 0 0}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px}.card{background:var(--panel);border:1px solid #ffffff1c;border-radius:13px;padding:19px}.card h3{margin:0 0 8px}.card button{width:100%;text-align:left;background:transparent;border:0;color:var(--text);padding:0;font:inherit;font-size:1.12rem;font-weight:700;cursor:pointer;display:flex;justify-content:space-between;gap:10px}.card button:focus-visible{outline:2px solid var(--accent);outline-offset:6px}.details{margin-top:12px;border-top:1px solid #ffffff2a;padding-top:12px}.details[hidden]{display:none}.placeholder{color:#e7cc98;font-style:italic}.footer{padding:35px 0;color:var(--muted)}@media(max-width:600px){nav{gap:10px}section{padding:45px 0}.brand{width:100%}}
+
+/* Native HTML expandable project cards */
+.project-card{overflow:hidden;padding:0}
+.project-card summary{list-style:none;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:21px;cursor:pointer;font-size:1.13rem;font-weight:750}
+.project-card summary::-webkit-details-marker{display:none}
+.project-card summary:hover{background:#2a344b}
+.project-card summary:focus-visible{outline:3px solid var(--accent);outline-offset:-4px}
+.project-card summary .toggle{font-size:1.5rem;color:var(--accent);line-height:1}
+.project-card[open] summary .toggle{transform:rotate(45deg)}
+.project-card .details{padding:18px 21px 22px;margin:0}
+.project-card .details p{margin:4px 0 17px}
+#contact a{color:var(--accent);overflow-wrap:anywhere}</style>
+</head>
+<body>
+<header><nav aria-label="Main navigation"><a class="brand" href="#home">Portfolio</a><a href="#projects">Game Projects</a><a href="#skills">Technical Skills</a><a href="#experience">Experience</a><a href="#contact">Contact</a></nav></header>
+<main>
+<section id="home"><div class="eyebrow">Game Development Portfolio</div><h1>Chaean Kim</h1><p class="muted">I'm a Games student at the University of Utah Asia Campus. I like building games and exploring how gameplay, visuals and sound work together. Here are some projects I've worked on and what I contributed to each one.</p></section>
+<section id="projects"><h2>Game Projects</h2><p class="muted">Select a project to see its overview, development tools, and my contributions.</p><div class="grid" id="project-grid"><details class="card project-card">
+<summary><span>Shimmani / K-Herb Hunters</span><span aria-hidden="true" class="toggle">+</span></summary>
+<div class="details"><strong>Overview</strong><p>A team-built Python/Pygame puzzle adventure featuring a tutorial, two regular stages, and a boss stage. Players collect wild ginseng and navigate obstacles and enemies.</p><strong>Tools</strong><p>Python, Pygame, Tiled</p><strong>My Contributions</strong><p>Worked on enemy and boss behavior, gameplay effects and balancing; composed original background music and created or selected sound effects.</p>
+
+</div></details><details class="card project-card">
+<summary><span>GA_FinalProject</span><span aria-hidden="true" class="toggle">+</span></summary>
+<div class="details"><strong>Overview</strong><p>A game-audio implementation project connecting Wwise and Unreal Engine, including interactive transitions from regular gameplay music to boss music.</p><strong>Tools</strong><p>Unreal Engine, Wwise</p><strong>My Contributions</strong><p>Implemented event-based audio, interactive music transitions, auxiliary-bus reverb, sound effects, and SoundBank integration.</p>
+
+</div></details><details class="card project-card">
+<summary><span>Busan Ramen Making</span><span aria-hidden="true" class="toggle">+</span></summary>
+<div class="details"><strong>Overview</strong><p>A choice-driven game built in Unreal Engine with branching outcomes and five different endings.</p><strong>Tools</strong><p>Unreal Engine, Adobe Photoshop, Adobe Illustrator</p><strong>My Contributions</strong><p>Designed the user interface and planned the branching storyline. Created visual assets and game presentation using Adobe Photoshop and Illustrator.</p>
+
+</div></details><details class="card project-card">
+<summary><span>Wwise Interactive Music Prototype</span><span aria-hidden="true" class="toggle">+</span></summary>
+<div class="details"><strong>Overview</strong><p>An interactive music system in which game context, including combat and non-combat states, changes the audio experience.</p><strong>Tools</strong><p>Wwise</p><strong>My Contributions</strong><p>Used States, Switches, and Random Containers to organize and control music behavior across gameplay situations.</p>
+
+</div></details><details class="card project-card">
+<summary><span>Unreal Cinematic</span><span aria-hidden="true" class="toggle">+</span></summary>
+<div class="details"><strong>Overview</strong><p>A short cinematic animation project assembled and rendered in Unreal Engine.</p><strong>Tools</strong><p>Unreal Engine</p><strong>My Contributions</strong><p>Worked with camera cuts, transitions, animation, and rendering.</p>
+
+</div></details><details class="card project-card">
+<summary><span>Thankyou, Professor Payen</span><span aria-hidden="true" class="toggle">+</span></summary>
+<div class="details"><strong>Overview</strong><p>A choice-based resource-management story game made with Ren’Py.</p><strong>Tools</strong><p>Ren’Py, Clip Studio Paint</p><strong>My Contributions</strong><p>Worked on the artwork and scenario for the interactive story.</p>
+
+</div></details></div></section>
+<section id="skills"><h2>Technical Skills</h2><p><span class="pill">Unreal Engine</span><span class="pill">Unity</span><span class="pill">Python</span><span class="pill">Wwise</span><span class="pill">Maya</span><span class="pill">Blender</span><span class="pill">Cubase</span></p><p class="muted">Tools used in coursework, game development, 3D work, and audio production.</p></section>
+<section id="experience"><h2>Experience &amp; Education</h2><div class="card"><h3>University of Utah Asia Campus</h3><p>B.S. in Games · Expected graduation: 2028</p></div><div class="card" style="margin-top:16px"><h3>Korean Teaching Assistant &amp; Language Lab Tutor</h3><p>Supported Korean language learning through tutoring and classroom-related assistance.</p></div></section>
+<section id="contact"><h2>Contact</h2><p>Email: <a href="mailto:u1559825@umail.utah.edu">u1559825@umail.utah.edu</a></p></section>
+</main>
+</body>
+</html>
+
